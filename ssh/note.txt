@@ -1,0 +1,15 @@
+useradd -m  user
+
+mkdir /home/user/.ssh
+
+chown -R user:user /home/user/.ssh
+
+chmod 700 /home/user/.ssh
+
+vi /home/user/.ssh/authorized_keys
+
+chown -R user:user /home/user/.ssh/authorized_keys
+
+chmod 600 /home/user/.ssh/authorized_keys
+
+
