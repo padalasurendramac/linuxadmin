@@ -4,7 +4,7 @@
  
 
 #   how to find isntalled packages 
-   yum list installed   # centos 7   
+   yum list installed   # centos 7    example :- yum list apache*   for all apache name packages to find or  yum list | grep nginx
    apt  list  --installed  # ubuntu
    
  # how to update packages
