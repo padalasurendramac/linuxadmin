@@ -4,24 +4,24 @@
  
 
 #   how to find isntalled packages 
-   yum list installed   # centos 7    example :- yum list apache*   for all apache name packages to find or  yum list | grep nginx
-   
-   
-   apt  list  --installed  # ubuntu
-   
+         yum list installed   # centos 7    example :- yum list apache*   for all apache name packages to find or  yum list | grep nginx
+
+
+         apt  list  --installed  # ubuntu
+
  # how to update packages
     yum update  <package>  # centos 
     apt --only-upgrade  <package>  #  ubuntu
     
 #     installation package
-  yum install  <package>   #  centos     remove   yum remove [package_name]  or yum erase [package_name] 
-   
-  apt install < package>   #  ubuntu      remove   :--  1.   sudo apt-get remove gimp     # forcely  sudo apt-get --purge remove gimp  
-  
+        yum install  <package>   #  centos     remove   yum remove [package_name]  or yum erase [package_name] 
+
+        apt install < package>   #  ubuntu      remove   :--  1.   sudo apt-get remove gimp     # forcely  sudo apt-get --purge remove gimp  
+
 #    how to check avilable package with version 
-  simple command:-  1...  yum list available solr
-  
- 2......yum --showduplicates list httpd | expand    
+        simple command:-  1...  yum list available solr
+
+       2......yum --showduplicates list httpd | expand    
 
 ----
 $ yum --showduplicates list httpd | expand
@@ -50,6 +50,7 @@ $ yum --showduplicates list httpd | expand
 
 #  particular version ubuntu ex:  sudo apt-get install apache2=2.2.20-1ubuntu1   1   
                         linux centos  ex:- sudo yum install httpd-2.4.6-6  
+                        apt-get  --only-upgrade install package
 
 
 
