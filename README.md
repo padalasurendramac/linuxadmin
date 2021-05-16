@@ -56,7 +56,36 @@ or command
 
     setenforce 0  #  for disable     setenforce 1  #   foe enable
 
-    
-    
+###  user creating
+     useradd -m user   #  create user or if nologin    -->  useradd -m -s /bin/nologin  user   ## for checking user logins /etc/passwd   and already crated user 
+     modification        usermod -s /usr/sbin/nologin user   # no shalll  useradd -m --shall 
+     
+     then set passwod
+     passwd user
+     
+#### ssh key gen from root user
+    ssh-keygen -b 4096 -t rsa -N '' -f /home/$user/.ssh/id_rsa
+
+
+
+#### user permission while create user
+                    create 
+                    then given ownner shit to# chown -R $user:$user /home/%user/.ssh
+                    then given permission to# chmod 700 /home/$user/.ssh
+
+                    drwx------  2 spadala spadala 4096 Jan 14 09:04 .ssh
+
+
+
+
+                    Note:-  id_rsa.pub   is # chmod 644  id_rsa.pub
+
+                    root@bastion:/home/spadala/.ssh# ls -lrt
+                    total 12
+                    -rw-r--r-- 1 spadala spadala  753 Dec 30 09:52 id_rsa.pub
+                    -rw------- 1 spadala spadala 3247 Dec 30 09:52 id_rsa
+                    -rw------- 1 spadala spadala  402 Dec 31 11:32 authorized_keys
+                    note:-  chmod 600 authorized_keys  
+
    
     
