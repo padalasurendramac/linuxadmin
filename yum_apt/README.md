@@ -57,4 +57,35 @@ $ yum --showduplicates list httpd | expand
 
 ==========================================================-
 
+#   update checking
+
+         [root@centos7 ~]# yum check-update
+         Loaded plugins: fastestmirror
+         Loading mirror speeds from cached hostfile
+
+         bash.x86_64                             4.2.46-20.el7_2        updates
+         dbus.x86_64                             1:1.6.12-14.el7_2      updates
+         dbus-libs.x86_64                        1:1.6.12-14.el7_2      updates
+         device-mapper-persistent-data.x86_64    0.6.2-1.el7_2          updates
+         glibc.x86_64                            2.17-106.el7_2.8       updates
+         glibc-common.x86_64                     2.17-106.el7_2.8       updates
+         initscripts.x86_64                      9.49.30-1.el7_2.3      updates
+         kernel.x86_64                           3.10.0-327.28.3.el7    updates
+         kernel-tools.x86_64                     3.10.0-327.28.3.el7    updates
+         kernel
+     
+--------------------------------
+#    yum repolist showing  for only enable list usee yum repolist or all use  yum repolist all
+
+         [root@centos7 ~]# yum repolist all
+
+         repo id                      repo name                   status
+         base/7/x86_64                CentOS-7 - Base             enabled: 9,007
+         base-debuginfo/x86_64        CentOS-7 - Debuginfo        disabled
+         base-source/7                CentOS-7 - Base Sources     disabled
+         c7-media                     CentOS-7 - Media            disabled
+         centosplus/7/x86_64          CentOS-7 - Plus             disabled
+         ...
+
+
 
