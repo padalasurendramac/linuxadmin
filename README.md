@@ -39,7 +39,24 @@
      cat /proc/meminfo   # for memory
      cat /proc/cpuinfo    #  for cpu
      
-### 
+###  selinux status
+   [vagrant@vagrantdev ~]$ sestatus
+    SELinux status:                 enabled
+    SELinuxfs mount:                /selinux
+    Current mode:                   permissive
+    Mode from config file:          permissive
+    Policy version:                 24
+    Policy from config file:        targeted
+                   ------or-----
+     [vagrant@vagrantdev ~]$ getenforce
+        Permissive
+    
+#    to set selinux we have to options vi /etc/selinux/config  ===check to  disalbed
+or command 
+
+    setenforce 0  #  for disable     setenforce 1  #   foe enable
+
+    
     
    
     
