@@ -19,9 +19,9 @@
  ####  how to check  folder memory size
     root@ip-172-31-3-35:/etc# du -sh ssh/
       344K    ssh/
-   for all for gige or meta   
-   du -sh *  |  grep G
-   du -sh *   |  grep M
+               for all for gige or meta   
+               du -sh *  |  grep G
+               du -sh *   |  grep M
    
  ### for disk size checking 
     df  -Th
