@@ -1,6 +1,18 @@
 #Ubuntu update for 16 to 18 or 20
 -----------------------------------------
 
+   Notes:- 1   apt-get updae # it will downlaod updated related scripts downlaods
+           2.   apt-get upgrade  # it will upgrade the existing packages.
+           3.  apt-get dist upgrade # it will upgrade the kernel and distribution
+           4. apt-get clean # is using to clean apt.
+           5. apt-get  install -f # is  using to fix the broken package ( like reinstalle)
+           6. particular  kernel update  (  step. download `deb` packgae .stet2. install using  `dkpg -i *.deb` command. ) then type this command `update-grub`
+           7. checking kernel package `dpkg --list | grep linux-image`
+           8. reomve kernel `apt remvove <pacakgeneme>`
+           9. checking kernel command ` uanme -msr` or `uname -r`
+           10. checking ubuntu version `lsb_release -a`
+
+
 ###Step:-1 # Run the update command with sudo 
 --------------------------
              sudo apt-get update
