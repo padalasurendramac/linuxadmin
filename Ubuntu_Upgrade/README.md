@@ -55,7 +55,7 @@
 ###And confirm enter “ y “
 ####Package configuration msg
 
-
+   <img src="https://raw.githubusercontent.com/padalasurendramac/linuxadmin/main/Ubuntu_Upgrade/images/keep_the_local_version.png" >
 
 
 
@@ -75,6 +75,7 @@
 
 
 ###Enter “ y “ it will reboot the server.
+        <img src="https://raw.githubusercontent.com/padalasurendramac/linuxadmin/main/Ubuntu_Upgrade/images/image1.png" >
 
 
 
