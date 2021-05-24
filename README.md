@@ -88,4 +88,29 @@ or command
                     note:-  chmod 600 authorized_keys  
 
    
-    
+
+##Screen using in linux
+
+              #  To  create use below commmand    (-S)
+              screen  -S  <name>
+              #  deattach to screen using ctrl+a Then d
+              # to kill the session  ctrl+a  then k
+              # Forcefully deattach to use this below command
+              screen -r -d <name>
+              #  to checking screen name list
+              screen -ls
+              # to attach  the screen
+              screen -r <name>
+              
+              # to kill the session 
+              screen -X -S "<name>" quit
+              
+# how to checking proccess  on linux
+
+       # command
+       ps -ef  or top
+       
+       or ps -ef | grep <name of the service>
+       # to kill the service
+       kill -9 <proccessID>
+       
