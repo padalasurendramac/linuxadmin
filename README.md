@@ -114,3 +114,17 @@ or command
        # to kill the service
        kill -9 <proccessID>
        
+# Checking the servie with port
+
+   lsof -i:5004
+
+
+# Finding the port number with pid:-
+
+    ps aux | grep 1809
+    83    root  1809 0.0 0.323504 12222 may28 0:06 node  --max-old-size=8192  index.js KC InternalLEXAnalyzerService-KC
+    then 
+    
+    netstat -lntp | grep 1809
+    tc6  0  0 ::8086   :::*
+   
