@@ -127,4 +127,18 @@ or command
     
     netstat -lntp | grep 1809
     tc6  0  0 ::8086   :::*
+    
+    
+#    sed commmand using to delete line with one word of the sentence  in that lines.
+      
+       sed  -i '/kb-filename.xml/d' filename.txt
+       
+#       sed command using to replace word one to another for only first line of that word in that file
+
+       sed -i 's/from/to/g' filename.txt
+       
+#       sed command for all lines
+
+         sed -i 's/from/to/gI' filename.txt
+    
    
