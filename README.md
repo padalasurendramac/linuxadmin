@@ -141,4 +141,32 @@ or command
 
          sed -i 's/from/to/gI' filename.txt
     
+    
+#    diff command using to compare two files
+
+        [root@ip-172-31-19-194 ~]# cat test.txt
+        i
+        was
+        first
+        Programmer
+        of
+        mine
+        [root@ip-172-31-19-194 ~]# cat text1.txt
+        i
+        was
+        secound
+        Programmer_sec
+        of
+        mine
+        [root@ip-172-31-19-194 ~]# 
+
+           [root@ip-172-31-19-194 ~]# diff test.txt text1.txt
+            3,4c3,4
+            < first
+            < Programmer
+            ---
+            > secound
+            > Programmer_sec
+            [root@ip-172-31-19-194 ~]# 
+
    
