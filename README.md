@@ -173,3 +173,12 @@ or command
 
       grep '<word1>\|<word2>' file.txt | wc -l
       sed -i '/<word1>\|<word2>/d'  file.txt
+
+  #    Linux read and write permissions
+     
+                           owner     group      other
+      read  (r)             4          4          4
+      write  (w)            2          2          2
+      execute  (x)           1          1          1
+
+      chmod -R 440 file.txt
