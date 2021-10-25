@@ -169,4 +169,7 @@ or command
             > Programmer_sec
             [root@ip-172-31-19-194 ~]# 
 
-   
+   #    Grep words and delete lines
+
+      grep '<word1>\|<word2>' file.txt | wc -l
+      sed -i '/<word1>\|<word2>/d'  file.txt
