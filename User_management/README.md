@@ -1,6 +1,7 @@
 #  User creations and checking no login , /bin/bash/ , /bin/sh
 
-## creating user  command syntax:- useradd -m -d /home/<userName> -c "<userName>" <userName> -s /bin/sh or /bin/bash or /bin/nologin
+## creating user  command syntax:- useradd -m -d /home/<userName> -c "<userName>" <userName> -s /bin/sh or /bin/bash or /bin/nologin  ( Look at the above snapshot, we have created a user xyz along with creating a home directory (-m), setting the name of home directory (-d), and a description (-c). ) 
+
   
         [root@localhost ~]# useradd -m -d /home/test -c "test" test -s /bin/sh
         [root@localhost ~]# cat /etc/passwd | tail -1
@@ -9,6 +10,8 @@
 
         Note:- a) passwd file using to identity the shell type
                b) password set command syntax:- passwd <test>
+               c) changing shell  command syntax:-   usermod -s /bin/bash <test>
+               
   
 ## giving sudo permission 
        Add following line  to /etc/sudoers
