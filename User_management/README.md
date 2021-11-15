@@ -1,6 +1,6 @@
 #  User creations and checking no login , /bin/bash/ , /bin/sh
 
-## creating user  command syntax:- useradd -m -d /home/<userName> -c "<userName>" <userName> -s /bin/sh or /bin/bash or /bin/nologin  ( Look at the above snapshot, we have created a user xyz along with creating a home directory (-m), setting the name of home directory (-d), and a description (-c). ) 
+## creating user  command syntax:- useradd -m -d /home/<userName> -c "<userName>" <userName> -s /bin/sh or /bin/bash or /bin/nologin  ( Look at the above snapshot, we have created a user xyz along with creating a home directory (-m), setting the name of home directory (-d), and a description (-c). -u  userid ) 
 
   
         [root@localhost ~]# useradd -m -d /home/test -c "test" test -s /bin/sh
@@ -11,6 +11,7 @@
         Note:- a) passwd file using to identity the shell type
                b) password set command syntax:- passwd <test>
                c) changing shell  command syntax:-   usermod -s /bin/bash <test>
+               d) useradd -u 1002 <test>  ( test:x:1002:1002:test:/home/test:/bin/sh )
                
   
 ## giving sudo permission 
@@ -36,6 +37,10 @@
         -rw-r--r-- 1 <test> <test>  753 Dec 30 09:52 id_rsa.pub      ( r+w = 6  r=4 r=4  chmod 644 id_rsa.pub )
         -rw------- 1 <test> <test> 3247 Dec 30 09:52 id_rsa          ( r+w = 6 0 0       chmod 600 id_rsa )
         -rw------- 1 <test> <test>  402 Dec 31 11:32 authorized_keys ( r+w = 6  0  0   chmod   600 authorized_keys
+         
+         
+ ## del user
+         userdel -r <test> ( -r include delete user's home directory as well )
 
 
 
