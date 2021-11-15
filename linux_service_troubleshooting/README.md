@@ -22,3 +22,15 @@
 
 
 Example:1 
+
+###  systemctl list-units --type=service OR  systemctl --type=service
+   ![image](https://user-images.githubusercontent.com/53860717/141718446-9ded7c0c-381a-47ab-a2af-3d3c1fa24782.png)
+
+
+###  systemctl list-units --type=service --state=active  OR  systemctl --type=service --state=active
+    ![image](https://user-images.githubusercontent.com/53860717/141718521-a62b3108-374e-4407-8027-44944ea79360.png)
+
+###  systemctl list-units --type=service --state=running  OR systemctl --type=service --state=running
+
+    ![image](https://user-images.githubusercontent.com/53860717/141718571-274d1bc6-31fd-4c3a-bed2-d73ad7774cd7.png)
+
