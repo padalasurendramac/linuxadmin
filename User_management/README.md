@@ -64,7 +64,8 @@
                    java:x:1003:test
          
          
-## Remove user from group  ( test=(user) , java =(group) )  command syntax :- gpasswd -d <user> <group>
+## Remove user from group  ( test=(user) , java =(group) )  
+command syntax :- gpasswd -d <user> <group>
 
                   [root@localhost ~]# groups test
                   test : test java
