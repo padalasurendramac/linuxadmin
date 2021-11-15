@@ -21,3 +21,4 @@
 ### step:-2 Now restart or start the failure service on another termnial in the same instance ( systemctl start ssh.service ) or ( systemctl restart ssh.service )
 
 
+Example:1 
