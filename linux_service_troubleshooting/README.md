@@ -3,11 +3,11 @@
 
 ### running service
     ansible@****:~$ systemctl list-units --type=service --state=running  | grep ssh
-   ssh.service                                    loaded active running OpenBSD Secure Shell server
+    ssh.service                                    loaded active running OpenBSD Secure Shell server
 
 ### active service
     ansible@****:~$ systemctl list-units --type=service --state=active| grep ssh
-   ssh.service                                    loaded active running OpenBSD Secure Shell server
+    ssh.service                                    loaded active running OpenBSD Secure Shell server
    
 ###  only list 
     ansible@****:~$ systemctl list-units --type=service   | grep ssh
