@@ -1,6 +1,7 @@
 #  User creations and checking no login , /bin/bash/ , /bin/sh
 
-## creating user  command syntax:- useradd -m -d /home/<userName> -c "<userName>" <userName> -s /bin/sh or /bin/bash or /bin/nologin  ( Look at the above snapshot, we have created a user xyz along with creating a home directory (-m), setting the name of home directory (-d), and a description (-c). -u  userid ) 
+## creating user  command syntax:- useradd -m -d /home/<userName> -c "<userName>" <userName> -s /bin/sh or /bin/bash or /bin/nologin  
+  ( Look at the above snapshot, we have created a user xyz along with creating a home directory (-m), setting the name of home directory (-d), and a description (-c). -u  userid ) 
 
   
         [root@localhost ~]# useradd -m -d /home/test -c "test" test -s /bin/sh
@@ -44,4 +45,18 @@
 
 
 
-     
+## group creating 
+
+      groupadd <test>
+      ex:- [root@localhost ~]# groupadd java
+           [root@localhost ~]# cat /etc/group | grep java
+           java:x:1003:   
+
+## add user to group
+         usermod -a -G <group> <userName> 
+         example:- [root@localhost ~]# usermod -a -G java   test
+                   [root@localhost ~]# cat /etc/passwd | grep test
+                   test:x:1002:1002:test:/home/test:/bin/sh
+                   [root@localhost ~]# cat /etc/group | grep java
+                   java:x:1003:test
+
