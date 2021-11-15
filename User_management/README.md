@@ -10,6 +10,11 @@
         Note:- a) passwd file using to identity the shell type
                b) password set command syntax:- passwd <test>
   
+## giving sudo permission 
+       Add following line  to /etc/sudoers
+       <test>    ALL=(ALL)       NOPASSWD: ALL
+
+  
 ##  .ssh folder permission and ssh key generate and file permissions 
 ### first create .ssh folder then change ownership and permission below
        mkdir /home/<test>/.ssh
