@@ -51,6 +51,9 @@
       ex:- [root@localhost ~]# groupadd java
            [root@localhost ~]# cat /etc/group | grep java
            java:x:1003:   
+## del group 
+         groupdel <group>  
+         ex:- groupdel  java
 
 ## add user to group
          usermod -a -G <group> <userName> 
@@ -59,4 +62,15 @@
                    test:x:1002:1002:test:/home/test:/bin/sh
                    [root@localhost ~]# cat /etc/group | grep java
                    java:x:1003:test
+         
+         
+## Remove user from group  ( test=(user) , java =(group) )  command syntax :- gpasswd -d <user> <group>
+
+                  [root@localhost ~]# groups test
+                  test : test java
+                  [root@localhost ~]# gpasswd -d test java
+                  Removing user test from group java
+                  [root@localhost ~]# groups test
+                  test : test
+                  [root@localhost ~]#
 
