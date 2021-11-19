@@ -1,8 +1,9 @@
 # RedHat Upgrade OS and Kernel
 ------
-Note:- a) exclude packages while upgarde ( yum update --exclude=ansible\* --exclude=nginx* )
 
-       b) broken packages while upgarde ( yum update --exclude=ansible\* --exclude=nginx* --skip-broken )
+Note:- a) Exclude packages while upgarde ( yum update --exclude=ansible\* --exclude=nginx* )
+
+       b) Broken packages while upgarde ( yum update --exclude=ansible\* --exclude=nginx* --skip-broken )
        
         Below error:- You could try using --skip-broken to work around the problem
                     You could try running: rpm -Va --nofiles --nodigest
