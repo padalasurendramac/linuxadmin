@@ -178,7 +178,9 @@ $ yum --showduplicates list httpd | expand
                user    0m32.504s
                sys     0m1.937s
                
-  #             
+  ###  yum auto remove for removing the dependencies
+      
+      yum autoremove <package>
  
             
             
