@@ -182,3 +182,11 @@ or command
       execute  (x)           1          1          1
 
       chmod -R 440 file.txt
+
+#   find particular file using command
+
+    find / -type f -name "cacerts"
+   / means root 
+   "cacerts" file 
+
+   
