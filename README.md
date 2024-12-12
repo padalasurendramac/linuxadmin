@@ -189,4 +189,24 @@ or command
    / means root 
    "cacerts" file 
 
-   
+# Reload the systemd daemon: Run the following command to reload systemd and pick up any changes in the unit files:
+
+  sudo systemctl daemon-reload
+
+# Check the current hostname:
+
+ hostnamectl
+
+# Set the new hostname: Use the hostnamectl set-hostname command to set a new hostname.
+
+  sudo hostnamectl set-hostname <new-hostname>
+
+# Update the /etc/hosts file: Open the /etc/hosts file and ensure the new hostname is mapped to the local IP (127.0.0.1) or any other appropriate IP.
+
+  sudo vi /etc/hosts
+
+127.0.0.1   localhost
+
+127.0.0.1   server01.example.com server01
+
+
