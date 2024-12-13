@@ -212,8 +212,11 @@ or command
 #  use below command to check last command got error(1) or no means (0)
 
 echo $?
+
 0
+
 or 
+
 value like 123 or 1 or 3
 
 
