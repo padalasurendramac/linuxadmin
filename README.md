@@ -219,4 +219,7 @@ or
 
 value like 123 or 1 or 3
 
+# rpm package download websites https://rpmfind.net/linux/rpm2html/search.php?query=ca-certificates&submit=Search+...
+
+![image](https://github.com/user-attachments/assets/6d516ebd-c118-441f-96dd-4d45c5d6d1ee)
 
