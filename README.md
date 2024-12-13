@@ -142,7 +142,7 @@ or command
          sed -i 's/from/to/gI' filename.txt
     
     
-#    diff command using to compare two files
+###    diff command using to compare two files
 
         [root@ip-172-31-19-194 ~]# cat test.txt
         i
@@ -169,12 +169,12 @@ or command
             > Programmer_sec
             [root@ip-172-31-19-194 ~]# 
 
-   #    Grep words and delete lines
+   ###    Grep words and delete lines
 
       grep '<word1>\|<word2>' file.txt | wc -l
       sed -i '/<word1>\|<word2>/d'  file.txt
 
-  #    Linux read and write permissions
+  ###    Linux read and write permissions
      
                            owner     group      other
       read  (r)             4          4          4
@@ -183,25 +183,25 @@ or command
 
       chmod -R 440 file.txt
 
-#   find particular file using command
+###   find particular file using command
 
     find / -type f -name "cacerts"
    / means root 
    "cacerts" file 
 
-# Reload the systemd daemon: Run the following command to reload systemd and pick up any changes in the unit files:
+### Reload the systemd daemon: Run the following command to reload systemd and pick up any changes in the unit files:
 
   sudo systemctl daemon-reload
 
-# Check the current hostname:
+### Check the current hostname:
 
  hostnamectl
 
-# Set the new hostname: Use the hostnamectl set-hostname command to set a new hostname.
+### Set the new hostname: Use the hostnamectl set-hostname command to set a new hostname.
 
   sudo hostnamectl set-hostname <new-hostname>
 
-# Update the /etc/hosts file: Open the /etc/hosts file and ensure the new hostname is mapped to the local IP (127.0.0.1) or any other appropriate IP.
+### Update the /etc/hosts file: Open the /etc/hosts file and ensure the new hostname is mapped to the local IP (127.0.0.1) or any other appropriate IP.
 
   sudo vi /etc/hosts
 
@@ -209,7 +209,7 @@ or command
 
 127.0.0.1   server01.example.com server01
 
-#  use below command to check last command got error(1) or no means (0)
+###  use below command to check last command got error(1) or no means (0)
 
 echo $?
 
@@ -219,22 +219,22 @@ or
 
 value like 123 or 1 or 3
 
-# rpm package download websites https://rpmfind.net/linux/rpm2html/search.php?query=ca-certificates&submit=Search+...
+### rpm package download websites https://rpmfind.net/linux/rpm2html/search.php?query=ca-certificates&submit=Search+...
 
 ![image](https://github.com/user-attachments/assets/6d516ebd-c118-441f-96dd-4d45c5d6d1ee)
 
-# yum using to download package 
+### yum using to download package 
 
 sudo yum install --downloadonly --downloaddir=/tmp ca-certificates
 
-# install using rpm 
+### install using rpm 
 
 sudo rpm -ivh /path/to/download/package-name.rpm
 
 -i install, -v debugg, -h humbanreadble, -U upgrade, -e remove,-q search ,-qa list all, -V installed packages,-ql specific package installed, -qf To find which package a particular file came from,-qR  To list the dependencies of an installed package...
 
 
-# yum command
+#### yum command
 
 yum install httpd 
 
@@ -244,15 +244,15 @@ install list
 
 yum list installed
 
-# Clean yum cache:
+### Clean yum cache:
 
 yum clean all
 
-# List available updates:
+### List available updates:
 
 yum list updates
 
-# Enable or disable repositories:
+### Enable or disable repositories:
 
 yum config-manager --enable <repo_name>
 
