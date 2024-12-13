@@ -223,3 +223,13 @@ value like 123 or 1 or 3
 
 ![image](https://github.com/user-attachments/assets/6d516ebd-c118-441f-96dd-4d45c5d6d1ee)
 
+# yum using to download package 
+
+sudo yum install --downloadonly --downloaddir=/tmp ca-certificates
+
+# install using rpm 
+
+sudo rpm -ivh /path/to/download/package-name.rpm
+
+
+
