@@ -231,5 +231,5 @@ sudo yum install --downloadonly --downloaddir=/tmp ca-certificates
 
 sudo rpm -ivh /path/to/download/package-name.rpm
 
-
+-i install, -v debugg, -h humbanreadble, -U upgrade, -e remove,-q search ,-qa list all, -V installed packages,-ql specific package installed, -qf To find which package a particular file came from,-qR  To list the dependencies of an installed package...
 
