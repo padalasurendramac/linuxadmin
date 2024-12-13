@@ -209,4 +209,11 @@ or command
 
 127.0.0.1   server01.example.com server01
 
+#  use below command to check last command got error(1) or no means (0)
+
+echo $?
+0
+or 
+value like 123 or 1 or 3
+
 
