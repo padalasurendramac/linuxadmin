@@ -231,7 +231,7 @@ sudo yum install --downloadonly --downloaddir=/tmp ca-certificates
 
 sudo rpm -ivh /path/to/download/package-name.rpm
 
--i install, -v debugg, -h humbanreadble, -U upgrade, -e remove,-q search ,-qa list all, -V installed packages,-ql specific package installed, -qf To find which package a particular file came from,-qR  To list the dependencies of an installed package...
+-i install, -v debugg, -h humbanreadble, -U upgrade, -e remove,-q search ,-qa list all, -V installed packages,-ql specific package installed, -qf To find which package a particular file came from,-qR  To list the dependencies of an installed package,downgrade 
 
 
 ### yum command
@@ -249,5 +249,24 @@ yum list updates
 
 ### Enable or disable repositories:
 yum config-manager --enable <repo_name>
+
 yum config-manager --disable <repo_name>
+
+###Install package from a specific repository:
+yum --enablerepo=epel install httpd
+
+###You can enable or disable repositories for a single command execution.
+yum --disablerepo=epel install httpd
+
+###View the transaction history:
+yum history
+
+###Undo a transaction:
+###If you want to undo a previous transaction (for example, if an update caused issues), you can roll it back.
+yum history undo <transaction_id>
+
+ex
+
+yum history undo 5
+
 
