@@ -253,20 +253,20 @@ yum config-manager --enable <repo_name>
 yum config-manager --disable <repo_name>
 
 ###Install package from a specific repository:
-yum --enablerepo=epel install httpd
+      yum --enablerepo=epel install httpd
 
 ###You can enable or disable repositories for a single command execution.
-yum --disablerepo=epel install httpd
+     yum --disablerepo=epel install httpd
 
 ###View the transaction history:
-yum history
+     yum history
 
 ###Undo a transaction:
 ###If you want to undo a previous transaction (for example, if an update caused issues), you can roll it back.
-yum history undo <transaction_id>
+    yum history undo <transaction_id>
 
-ex
+    ex
 
-yum history undo 5
+    yum history undo 5
 
 
